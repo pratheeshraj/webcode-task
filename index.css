@@ -1,0 +1,106 @@
+.header{
+    text-align: center;
+    background-color: rgb(0, 162, 255);
+    height: 80px;
+    padding-top: 20px;
+}
+body{
+    background-color: rgb(236, 244, 244);
+}
+*{
+   
+    margin: 0ch;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.body-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:30px;
+    background-color: rgb(236, 244, 244);
+}
+.card{
+    position: relative;
+    background-color:rgb(187, 214, 220) ;
+    max-width: 325px;
+    height: auto;
+    margin: 25px;
+    box-shadow: 0 5px 25px rgba(62, 3, 48, 0.2);
+    overflow: hidden;
+}
+
+ .image{
+   max-height: 200px;
+}
+.card-info{
+   position: relative;
+    color: #222;
+    padding: 10px 20px 20px;
+}
+.card-info h2{
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+.card-info p{
+    font-size:1em ;
+    margin-bottom: 5px;
+}
+.key{
+    color: blue;
+    text-shadow:4px 25px 25px rgbargb(43, 79, 39)d, green, blue) ;
+}
+
+.pagination{
+    text-align: center;
+    margin:30px 30px 60px ;
+    user-select: none;
+}
+.pagination li{
+  display: inline-block;
+  margin: 5px;
+  box-shadow:0 5px 25px rgb(1 1 1/10%) ;
+}
+.pagination li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 45px
+ }
+
+
+.previous-page,.last-page{
+   background-color:rgb(39, 39, 121) ;
+   width: 60px;
+   border-radius: 45px; 
+   cursor: pointer;
+   
+}
+.current-page{
+    background-color: rgba(95, 202, 229, 0.68);
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+} 
+.previous-page:hover{
+    transform: translateX(-5px);
+}
+.last-page:hover{
+    transform: translateX(5px);
+}
+.active{
+    background-color:rgb(39, 39, 121) ;
+}
+.disables{
+    background-color: rgba(95, 202, 229, 0.68);
+}
